@@ -1,0 +1,13 @@
+CONFIDENTIAL AND PROPRIETARY SOFTWARE
+
+Copyright (c) 2025 [Your Startup Name]. All rights reserved.
+
+This software and its documentation are confidential and proprietary 
+information of [Your Startup Name]. No part of this software may be 
+reproduced, distributed, or transmitted in any form or by any means, 
+including photocopying, recording, or other electronic or mechanical 
+methods, without the prior written permission of the owner.
+
+Access to this source code is restricted to authorized personnel under 
+active Non-Disclosure Agreements (NDA) and Intellectual Property 
+Assignment Agreements.
