@@ -1,0 +1,69 @@
+A. Identity Information
+id (UUID / auto increment, primary key)
+username (string, unique, not null)
+email (string, unique, not null)
+phone_number (string, unique, nullable)
+
+
+B. Authentication & Security
+password_hash (string, not null)
+password_salt (string, optional)
+is_email_verified (boolean, default false)
+is_phone_verified (boolean, default false)
+last_login_at (timestamp, nullable)
+failed_login_attempts (integer, default 0)
+account_locked_until (timestamp, nullable)
+
+C. Personal Profile
+first_name (string, nullable)
+last_name (string, nullable)
+full_name (string, nullable / derived)
+date_of_birth (date, nullable)
+gender (string / enum, nullable)
+profile_picture_url (string, nullable)
+bio (text, nullable)
+
+D. Account Status & Roles
+is_active (boolean, default true)
+is_staff (boolean, default false)
+is_admin (boolean, default false)
+is_superuser (boolean, default false)
+role (enum: USER, ADMIN, MODERATOR, default USER)
+
+E. Preferences & Settings
+language (string, default "en")
+timezone (string, nullable)
+theme (enum: light, dark, system)
+email_notifications (boolean, default true)
+sms_notifications (boolean, default false)
+
+F. Address Information
+address_line_1 (string, nullable)
+address_line_2 (string, nullable)
+city (string, nullable)
+state (string, nullable)
+country (string, nullable)
+postal_code (string, nullable)
+
+
+G. Audit & Tracking
+created_at (timestamp, not null)
+updated_at (timestamp, not null)
+created_by (UUID / foreign key, nullable)
+updated_by (UUID / foreign key, nullable)
+last_password_changed_at (timestamp, nullable)
+
+
+H. Legal & Compliance 
+terms_accepted_at (timestamp, nullable)
+privacy_policy_accepted_at (timestamp, nullable)
+gdpr_consent (boolean, default false)
+
+
+Notes:
+- Passwords are never stored in plain text.
+- UUIDs are preferred for distributed systems.
+- Nullable fields are optional.
+- Role-based access control (RBAC) supported.
+- Address information can be extended to support multiple addresses.
+
