@@ -2,6 +2,7 @@
 from pydantic import BaseModel, Field, EmailStr
 from typing import Optional, Dict
 from enum import Enum
+
 from datetime import date, datetime
 from uuid import UUID
 

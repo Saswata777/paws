@@ -1,5 +1,9 @@
+from dotenv import load_dotenv
 from fastapi import FastAPI
-from paws.snoot.routes import user_routers, pet_routers, host_routers
+
+load_dotenv()
+
+from snoot.routes import user_routers, pet_routers, host_routers
 
 app = FastAPI(
     title="Pows",

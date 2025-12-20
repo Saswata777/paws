@@ -14,3 +14,11 @@
    etc.
 10. design_patterns - ```snoot\services\*``` - To implement common design patterns like Singleton, Factory, Observer
     etc.
+
+
+# Project setup
+
+start server in development mode:
+```
+uvicorn app:app --reload --host 0.0.0.0 --port 8000
+```

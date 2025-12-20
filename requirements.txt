@@ -1,4 +1,7 @@
 fastapi==0.124.4
 pydantic[email]==2.12.2
-uvicorn==0.28.0
+pandas==2.3.3
+python-dotenv==1.2.1
 python-multipart==0.0.9
+SQLAlchemy==2.0.45
+uvicorn==0.28.0
