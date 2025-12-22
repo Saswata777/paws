@@ -12,20 +12,24 @@ def create_user(body: UserInput):
     Create a new user in the database.
     """
     try:
-        user = User.new(UserInput(
-            first_name="John",
-            last_name="Doe",
-            email="ajkn@sknf.com",
-            phone="1234567890",
-            date_of_birth="1990-01-01",
-            gender="Male"
-        ).dict())
+        # user = User.new(UserInput(
+        #     first_name="John",
+        #     last_name="Doe",
+        #     email="ajkn@sknf.com",
+        #     phone="1234567890",
+        #     date_of_birth="1990-01-01",
+        #     gender="Male"
+        # ).dict())
+        user = User.new(body.model_dump())
 
-        print(body.dict())
+        print(body.model_dump())
 
         return JSONResponse(
-            status_code=201,
-            content=body.dict()
+            content=body.model_dump(),
+            status_code=201
         )
     except Exception as e:
-        return HTTPException(status_code=500, detail="Internal Server Error!!")
+        # return HTTPException(status_code=500, detail="Internal Server Error!!")
+        print("ERROR:", e) # this acctually helped to find out the root cause of the issue
+        raise HTTPException(status_code=500, detail="Internal Server Error!!")
+
