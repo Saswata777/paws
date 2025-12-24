@@ -33,9 +33,10 @@ class User:
             last_user_id = int(df.loc[0, "user_id"]) if not df.empty else 0
 
             df = pd.DataFrame(
-                columns=["user_id", "first_name", "last_name", "email", "phone", "date_of_birth", "gender",
+                columns=["user_id","active", "first_name", "last_name", "email", "phone", "date_of_birth", "gender",
                          "created_at"],
                 data=[[last_user_id + 1,
+                        False,  
                        user_data.get("first_name"),
                        user_data.get("last_name"),
                        user_data.get("email"),
