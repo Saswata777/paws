@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="c5c142be-6c08-4f6b-9f97-519a8978c715" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snoot/database/dao/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/snoot/database/dao/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snoot/database/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/snoot/database/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snoot/database/model/pet.py" beforeDir="false" afterPath="$PROJECT_DIR$/snoot/database/model/pet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snoot/database/model/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/snoot/database/model/user.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snoot/routes/user_routers.py" beforeDir="false" afterPath="$PROJECT_DIR$/snoot/routes/user_routers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snoot/schema/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/snoot/schema/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snoot/service/user_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/snoot/service/user_service.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
