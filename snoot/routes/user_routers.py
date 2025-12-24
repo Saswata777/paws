@@ -10,6 +10,6 @@ router = APIRouter()
 
 
 @router.post("/")
-async def create_user(body: UserInput):
+async def create_user_endpoint(body: UserInput):
     return user_service.create_user(body)
 
